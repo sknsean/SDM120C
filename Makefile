@@ -1,7 +1,3 @@
-CC = gcc
-CFLAGS  = -O2 -Wall -g `pkg-config --cflags libmodbus`
-LDFLAGS = -O2 -Wall -g `pkg-config --libs libmodbus`
-
 SDM = sdm120c
 %.o: %.c
 	$(CC) -c -o $@ $< $(CFLAGS)
